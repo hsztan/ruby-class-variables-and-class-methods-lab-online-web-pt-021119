@@ -42,5 +42,3 @@ class Song
     hashy
   end
 end
-
-
