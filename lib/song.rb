@@ -33,4 +33,14 @@ class Song
     end
     hashy
   end
+
+  def self.artist_count
+    hashy = Hash.new
+    @@artists.each do |artist|
+      hashy.key?(artist) ? hashy[artist] += 1 : hashy[artist] = 1
+    end
+    hashy
+  end
 end
+
+
